@@ -9,7 +9,7 @@ public class PersonajeMovimiento : MonoBehaviour
     GameObject inventario_com;
     private bool InventoryVisible = false;
 
-    [SerializeField] private float velocidad;
+    [SerializeField] public float velocidad;
     public bool EnMovimiento => _direccionMovimiento.magnitude > 0f;
 
     public Vector2 DireccionMovimiento => _direccionMovimiento;
