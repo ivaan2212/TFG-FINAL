@@ -7,6 +7,10 @@ TagManager:
   - Controlador_de_Paredes
   - Mober_Capa
   - Por_delante_Del_armario
+  - GenerarEventos
+  - inventario-com
+  - inventario
+  - Pickeables
   layers:
   - Default
   - TransparentFX
