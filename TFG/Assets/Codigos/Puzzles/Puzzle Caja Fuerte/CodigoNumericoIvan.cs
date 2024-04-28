@@ -7,7 +7,7 @@ public class CodigoNumericoIvan : MonoBehaviour
 {
 
     public TMP_Text numero;
-    private int aux=0;
+    private int aux = 0;
     public GameObject mensaje_error;
 
     public void Arriba()
