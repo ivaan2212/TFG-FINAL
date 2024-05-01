@@ -27,7 +27,7 @@ public class Direcion_De_empuje : MonoBehaviour
                 Empujar_Mejorrar.Colisionando = true;
                 Empujar_Mejorrar.Empujando_Derecha = true;
 
-
+               
 
             }
 
@@ -59,6 +59,25 @@ public class Direcion_De_empuje : MonoBehaviour
 
 
         }
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 
 
@@ -78,6 +97,10 @@ public class Direcion_De_empuje : MonoBehaviour
 
                 Empujar_Mejorrar.Colisionando = false;
                 Empujar_Mejorrar.Empujando_Derecha = false;
+
+
+
+               
 
             }
 
@@ -111,6 +134,14 @@ public class Direcion_De_empuje : MonoBehaviour
 
 
         }
+
+
+       
+
+
+
+
+
     }
 
 

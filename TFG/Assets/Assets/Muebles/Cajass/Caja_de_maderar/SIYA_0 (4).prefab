@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1906928846013621538}
   - component: {fileID: 7537986532980425149}
-  - component: {fileID: 9191255136081485951}
+  - component: {fileID: 4264086565929033526}
   m_Layer: 0
   m_Name: Ariva
   m_TagString: Untagged
@@ -78,7 +78,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.1}
   m_EdgeRadius: 0
---- !u!114 &9191255136081485951
+--- !u!114 &4264086565929033526
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -87,10 +87,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 963599228823799793}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9a0d4aed2a14ac40bb508beff59b423, type: 3}
+  m_Script: {fileID: 11500000, guid: f3af4da9428a38d4795cbc67759bb78c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Empujar_Mejorrar: {fileID: 4071920941302122392}
+  Empujar_Mejorrar: {fileID: 8991667090292130445}
   Derecha: 0
   Izquierda: 0
   Ariba: 1
@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 3897426037688703421}
   - component: {fileID: 3916466926912294555}
   - component: {fileID: 8375855530720226801}
-  - component: {fileID: 4071920941302122392}
+  - component: {fileID: 8991667090292130445}
   m_Layer: 0
   m_Name: SIYA_0 (4)
   m_TagString: Untagged
@@ -235,7 +235,7 @@ Transform:
   m_GameObject: {fileID: 4354707374697075927}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 19.9, y: 9, z: 1.2734169}
+  m_LocalPosition: {x: 48.227978, y: -4.148424, z: 1.2734169}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -340,7 +340,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.00246}
   m_EdgeRadius: 0
---- !u!114 &4071920941302122392
+--- !u!114 &8991667090292130445
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -349,7 +349,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4354707374697075927}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53e3566fc3f395049860f7347c3ae88b, type: 3}
+  m_Script: {fileID: 11500000, guid: f2d64c69f0e45af4e935a218aa40fbee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Caja: {fileID: 4354707374697075927}
@@ -376,7 +376,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2034374722002349645}
   - component: {fileID: 4679776753974613712}
-  - component: {fileID: 637938276970821547}
+  - component: {fileID: 2018278846353834224}
   m_Layer: 0
   m_Name: Derecha
   m_TagString: Untagged
@@ -444,7 +444,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &637938276970821547
+--- !u!114 &2018278846353834224
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -453,10 +453,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6254460146110549537}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9a0d4aed2a14ac40bb508beff59b423, type: 3}
+  m_Script: {fileID: 11500000, guid: f3af4da9428a38d4795cbc67759bb78c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Empujar_Mejorrar: {fileID: 4071920941302122392}
+  Empujar_Mejorrar: {fileID: 8991667090292130445}
   Derecha: 1
   Izquierda: 0
   Ariba: 0
@@ -471,7 +471,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5420239297423823660}
   - component: {fileID: 4657231094011319343}
-  - component: {fileID: 5490588623881261530}
+  - component: {fileID: 8136180817827617842}
   m_Layer: 0
   m_Name: Abajo
   m_TagString: Untagged
@@ -539,7 +539,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.1}
   m_EdgeRadius: 0
---- !u!114 &5490588623881261530
+--- !u!114 &8136180817827617842
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -548,10 +548,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6412859937273879401}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9a0d4aed2a14ac40bb508beff59b423, type: 3}
+  m_Script: {fileID: 11500000, guid: f3af4da9428a38d4795cbc67759bb78c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Empujar_Mejorrar: {fileID: 4071920941302122392}
+  Empujar_Mejorrar: {fileID: 8991667090292130445}
   Derecha: 0
   Izquierda: 0
   Ariba: 0
@@ -566,7 +566,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3690184081197487676}
   - component: {fileID: 313363118368838103}
-  - component: {fileID: 1042577067832049557}
+  - component: {fileID: 7270268604448170621}
   m_Layer: 0
   m_Name: Izquierda
   m_TagString: Untagged
@@ -634,7 +634,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1042577067832049557
+--- !u!114 &7270268604448170621
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -643,10 +643,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7784317259391702795}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9a0d4aed2a14ac40bb508beff59b423, type: 3}
+  m_Script: {fileID: 11500000, guid: f3af4da9428a38d4795cbc67759bb78c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Empujar_Mejorrar: {fileID: 4071920941302122392}
+  Empujar_Mejorrar: {fileID: 8991667090292130445}
   Derecha: 0
   Izquierda: 1
   Ariba: 0
