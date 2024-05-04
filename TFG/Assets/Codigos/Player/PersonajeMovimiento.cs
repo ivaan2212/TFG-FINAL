@@ -6,8 +6,8 @@ using System;
 public class PersonajeMovimiento : MonoBehaviour
 {
 
-    GameObject inventario_com;
-    private bool InventoryVisible = false;
+    //GameObject inventario_com;
+    //private bool InventoryVisible = false;
 
     [SerializeField] public float velocidad;
     public bool EnMovimiento => _direccionMovimiento.magnitude > 0f;
@@ -49,8 +49,8 @@ public class PersonajeMovimiento : MonoBehaviour
 
     void Start()
     {
-        inventario_com = GameObject.FindGameObjectWithTag("inventario-com");
-        inventario_com.SetActive(false);
+        //inventario_com = GameObject.FindGameObjectWithTag("inventario-com");
+        //inventario_com.SetActive(false);
     }
 
 
@@ -67,7 +67,7 @@ public class PersonajeMovimiento : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.I))
+        /*if (Input.GetKeyUp(KeyCode.I))
         {
             if (!InventoryVisible)
             {
@@ -80,7 +80,7 @@ public class PersonajeMovimiento : MonoBehaviour
                 InventoryVisible = false;
                 inventario_com.SetActive(InventoryVisible);
             }
-        }
+        }*/
 
 
         //if(_personajeVida.Derrotado)
