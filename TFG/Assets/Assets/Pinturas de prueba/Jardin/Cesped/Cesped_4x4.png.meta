@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
@@ -75,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -87,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -99,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -111,6 +116,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -757,39 +763,38 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Cesped_4x4_: 1098786738
+      Cesped_4x4_0: 1346723856
+      Cesped_4x4_1: 1541028427
+      Cesped_4x4_10: 868477650
+      Cesped_4x4_11: -772367805
+      Cesped_4x4_12: 1480529884
+      Cesped_4x4_13: -1411988055
       Cesped_4x4_14: -1329919743
       Cesped_4x4_15: -823929330
-      Cesped_4x4_10: 868477650
-      Cesped_4x4_1: 1541028427
-      Cesped_4x4_26: 391719357
+      Cesped_4x4_16: 2051735591
+      Cesped_4x4_17: -1699047813
+      Cesped_4x4_18: 2013012058
+      Cesped_4x4_19: -2068819460
+      Cesped_4x4_2: 1766335812
       Cesped_4x4_20: 233195520
       Cesped_4x4_21: 527442679
-      Cesped_4x4_29: -1440076680
+      Cesped_4x4_22: -1641003606
+      Cesped_4x4_23: -133206163
+      Cesped_4x4_24: 1113201202
+      Cesped_4x4_25: -1710076419
+      Cesped_4x4_26: 391719357
       Cesped_4x4_27: -63736456
       Cesped_4x4_28: 836333656
+      Cesped_4x4_29: -1440076680
+      Cesped_4x4_3: -1179591094
       Cesped_4x4_4: -1634275234
       Cesped_4x4_5: -1686395648
-      Cesped_4x4_24: 1113201202
-      Cesped_4x4_13: -1411988055
-      Cesped_4x4_18: 2013012058
-      Cesped_4x4_3: -1179591094
-      Cesped_4x4_8: -1926408029
-      Cesped_4x4_17: -1699047813
-      Cesped_4x4_0: 1346723856
-      Cesped_4x4_25: -1710076419
-      Cesped_4x4_7: -1701491880
-      Cesped_4x4_: 1098786738
-      Cesped_4x4_2: 1766335812
-      Cesped_4x4_16: 2051735591
-      Cesped_4x4_23: -133206163
       Cesped_4x4_6: -1782930577
-      Cesped_4x4_19: -2068819460
-      Cesped_4x4_11: -772367805
-      Cesped_4x4_22: -1641003606
-      Cesped_4x4_12: 1480529884
-  spritePackingTag: 
+      Cesped_4x4_7: -1701491880
+      Cesped_4x4_8: -1926408029
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
@@ -75,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -87,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -99,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -111,6 +116,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -884,44 +890,43 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Estanteria_gris_0: -1031078546
-      Estanteria_vacia_9: -601648815
-      Estanteria_verder_11: -1857813863
-      Estanteria_verder_5: -255565099
-      Estanteria_gris_11: -889207391
       Estanteria_gris_1: -114927660
-      Estanteria_verder_1: -1129448211
-      Estanteria_vacia_11: -1537815632
-      Estanteria_vacia_3: -655382684
-      Estanteria_vacia_10: -548978975
-      Estanteria_gris_4: 1581778176
-      Estanteria_verder_10: 213078350
-      Estanteria_gris_6: -1911223844
       Estanteria_gris_10: -1207452925
+      Estanteria_gris_11: -889207391
       Estanteria_gris_2: -2112820945
-      Estanteria_verder_4: -178224786
-      Estanteria_gris_8: 1236961577
-      Estanteria_gris_7: -2124094659
-      Estanteria_verder_3: 637682374
-      Estanteria_vacia_1: 247608337
-      Estanteria_vacia_2: 937539306
-      Estanteria_vacia_8: 990064078
       Estanteria_gris_3: -643224929
-      Estanteria_verder_6: -336096489
+      Estanteria_gris_4: 1581778176
+      Estanteria_gris_5: -1176769790
+      Estanteria_gris_6: -1911223844
+      Estanteria_gris_7: -2124094659
+      Estanteria_gris_8: 1236961577
+      Estanteria_gris_9: 2065772757
+      Estanteria_vacia_0: 961399313
+      Estanteria_vacia_1: 247608337
+      Estanteria_vacia_10: -548978975
+      Estanteria_vacia_11: -1537815632
+      Estanteria_vacia_2: 937539306
+      Estanteria_vacia_3: -655382684
       Estanteria_vacia_4: 657474218
       Estanteria_vacia_5: 1626016474
-      Estanteria_verder_7: -880637304
       Estanteria_vacia_6: -737524844
-      Estanteria_verder_0: -1488605231
       Estanteria_vacia_7: 1143738441
-      Estanteria_gris_5: -1176769790
-      Estanteria_verder_9: -1468295338
-      Estanteria_gris_9: 2065772757
+      Estanteria_vacia_8: 990064078
+      Estanteria_vacia_9: -601648815
+      Estanteria_verder_0: -1488605231
+      Estanteria_verder_1: -1129448211
+      Estanteria_verder_10: 213078350
+      Estanteria_verder_11: -1857813863
       Estanteria_verder_2: 883505560
+      Estanteria_verder_3: 637682374
+      Estanteria_verder_4: -178224786
+      Estanteria_verder_5: -255565099
+      Estanteria_verder_6: -336096489
+      Estanteria_verder_7: -880637304
       Estanteria_verder_8: -601204314
-      Estanteria_vacia_0: 961399313
-  spritePackingTag: 
+      Estanteria_verder_9: -1468295338
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

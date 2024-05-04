@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
@@ -75,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -87,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -99,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -111,6 +116,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -400,22 +406,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Alfombra_gris_8: 510429506
       Alfombra_gris_0: 1189453797
-      Alfombra_gris_9: -235605955
-      Alfombra_gris_7: -119283136
-      Alfombra_gris_6: -1232037412
-      Alfombra_gris_2: -1108153446
-      Alfombra_gris_5: 1665909293
-      Alfombra_gris_10: -1621781862
       Alfombra_gris_1: -1546773815
-      Alfombra_gris_12: 1120321231
-      Alfombra_gris_3: -1986682746
+      Alfombra_gris_10: -1621781862
       Alfombra_gris_11: -810299441
+      Alfombra_gris_12: 1120321231
+      Alfombra_gris_2: -1108153446
+      Alfombra_gris_3: -1986682746
       Alfombra_gris_4: -1127496558
-  spritePackingTag: 
+      Alfombra_gris_5: 1665909293
+      Alfombra_gris_6: -1232037412
+      Alfombra_gris_7: -119283136
+      Alfombra_gris_8: 510429506
+      Alfombra_gris_9: -235605955
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
