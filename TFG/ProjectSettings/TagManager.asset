@@ -12,6 +12,7 @@ TagManager:
   - inventario
   - Pickeables
   - Suelo
+  - Caja
   layers:
   - Default
   - TransparentFX
