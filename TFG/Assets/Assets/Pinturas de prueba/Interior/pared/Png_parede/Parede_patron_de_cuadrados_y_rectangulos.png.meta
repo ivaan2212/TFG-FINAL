@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
@@ -75,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -87,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -99,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -111,6 +116,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -317,17 +323,16 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Parede_patron_de_cuadrados_y_rectangulos_0: 165267138
-      Parede_patron_de_cuadrados_y_rectangulos_5: -1195894717
-      Parede_patron_de_cuadrados_y_rectangulos_4: 994158258
-      Parede_patron_de_cuadrados_y_rectangulos_6: -1508702784
-      Parede_patron_de_cuadrados_y_rectangulos_3: 1431071408
-      Parede_patron_de_cuadrados_y_rectangulos_8: 1087390220
-      Parede_patron_de_cuadrados_y_rectangulos_2: -1283022832
       Parede_patron_de_cuadrados_y_rectangulos_1: -516865649
+      Parede_patron_de_cuadrados_y_rectangulos_2: -1283022832
+      Parede_patron_de_cuadrados_y_rectangulos_3: 1431071408
+      Parede_patron_de_cuadrados_y_rectangulos_4: 994158258
+      Parede_patron_de_cuadrados_y_rectangulos_5: -1195894717
+      Parede_patron_de_cuadrados_y_rectangulos_6: -1508702784
       Parede_patron_de_cuadrados_y_rectangulos_7: 1781261736
-  spritePackingTag: 
+      Parede_patron_de_cuadrados_y_rectangulos_8: 1087390220
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

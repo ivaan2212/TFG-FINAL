@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
@@ -75,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -87,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -99,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -111,6 +116,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -337,27 +343,26 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      retoque suelo parede_5: 1300855357
-      retoque suelo parede_12: 585706808
-      retoque suelo parede_15: 689932224
-      retoque suelo parede_10: -1007415557
-      retoque suelo parede_17: -844422069
-      retoque suelo parede_11: 242687530
-      retoque suelo parede_9: -1467066874
-      retoque suelo parede_16: 455635332
-      retoque suelo parede_8: 336352621
-      retoque suelo parede_3: -2042864294
-      retoque suelo parede_1: -516730157
-      retoque suelo parede_14: -356458095
-      retoque suelo parede_2: 1682111471
-      retoque suelo parede_6: 919759844
-      retoque suelo parede_13: -2048732974
-      retoque suelo parede_4: -1015158850
       retoque suelo parede_0: -1436309971
+      retoque suelo parede_1: -516730157
+      retoque suelo parede_10: -1007415557
+      retoque suelo parede_11: 242687530
+      retoque suelo parede_12: 585706808
+      retoque suelo parede_13: -2048732974
+      retoque suelo parede_14: -356458095
+      retoque suelo parede_15: 689932224
+      retoque suelo parede_16: 455635332
+      retoque suelo parede_17: -844422069
+      retoque suelo parede_2: 1682111471
+      retoque suelo parede_3: -2042864294
+      retoque suelo parede_4: -1015158850
+      retoque suelo parede_5: 1300855357
+      retoque suelo parede_6: 919759844
       retoque suelo parede_7: 1221380415
-  spritePackingTag: 
+      retoque suelo parede_8: 336352621
+      retoque suelo parede_9: -1467066874
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

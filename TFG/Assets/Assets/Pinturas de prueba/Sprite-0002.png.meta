@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
@@ -75,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -87,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -99,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -111,6 +116,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -611,31 +617,30 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Sprite-0002_0: -1842318229
-      Sprite-0002_12: 106073146
-      Sprite-0002_6: 1778700771
-      Sprite-0002_2: -703552113
-      Sprite-0002_4: 698200278
-      Sprite-0002_21: 1362604906
-      Sprite-0002_17: 776483854
-      Sprite-0002_5: -58890754
-      Sprite-0002_9: 589589892
-      Sprite-0002_20: 2143821165
       Sprite-0002_1: -1961743498
-      Sprite-0002_16: 354186911
       Sprite-0002_10: 1613056234
-      Sprite-0002_14: 1692216992
       Sprite-0002_11: -785309769
-      Sprite-0002_18: -1753717853
-      Sprite-0002_22: -255126485
-      Sprite-0002_8: 119157538
-      Sprite-0002_19: 1922943305
+      Sprite-0002_12: 106073146
       Sprite-0002_13: -94620409
-      Sprite-0002_7: -1267927112
+      Sprite-0002_14: 1692216992
       Sprite-0002_15: 2003034254
+      Sprite-0002_16: 354186911
+      Sprite-0002_17: 776483854
+      Sprite-0002_18: -1753717853
+      Sprite-0002_19: 1922943305
+      Sprite-0002_2: -703552113
+      Sprite-0002_20: 2143821165
+      Sprite-0002_21: 1362604906
+      Sprite-0002_22: -255126485
       Sprite-0002_3: 1143168766
-  spritePackingTag: 
+      Sprite-0002_4: 698200278
+      Sprite-0002_5: -58890754
+      Sprite-0002_6: 1778700771
+      Sprite-0002_7: -1267927112
+      Sprite-0002_8: 119157538
+      Sprite-0002_9: 589589892
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
