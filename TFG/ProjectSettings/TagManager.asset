@@ -13,6 +13,7 @@ TagManager:
   - Pickeables
   - Suelo
   - Caja
+  - Descripcion
   layers:
   - Default
   - TransparentFX
