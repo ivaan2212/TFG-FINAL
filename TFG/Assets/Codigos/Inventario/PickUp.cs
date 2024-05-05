@@ -6,7 +6,7 @@ public class PickUp : MonoBehaviour
 {
     private Inventory inventory;
     public GameObject itemPrefab;
-    public KeyCode teclaRecoger = KeyCode.J;
+    public KeyCode teclaRecoger = KeyCode.E;
 
     // Start is called before the first frame update
     private void Start()
