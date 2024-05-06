@@ -5,7 +5,7 @@ using UnityEngine;
 public class Interacion_menus : MonoBehaviour
 {
 
-
+    /*
 
 
 
@@ -126,7 +126,7 @@ public class Interacion_menus : MonoBehaviour
     
  }
 
-
+    */
 
 
 

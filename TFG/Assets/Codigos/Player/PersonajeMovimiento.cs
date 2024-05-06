@@ -17,7 +17,7 @@ public class PersonajeMovimiento : MonoBehaviour
     public Vector2 DireccionMovimiento => _direccionMovimiento;
 
     //private PersonajeVida _personajeVida; 
-
+    private GameObject movePersonaje;
     private Rigidbody2D _rigidbody2D;
     private Vector2 _direccionMovimiento;
     private Vector2 _Ultima_diracion;
@@ -53,6 +53,8 @@ public class PersonajeMovimiento : MonoBehaviour
     {
         //inventario_com = GameObject.FindGameObjectWithTag("inventario-com");
         //inventario_com.SetActive(false);
+        
+
     }
 
 
@@ -83,11 +85,18 @@ public class PersonajeMovimiento : MonoBehaviour
         if (inventoryEnabled)
         {
             inventory.SetActive(true);
+            Time.timeScale = 0f;
+
         }
         else
         {
             inventory.SetActive(false);
+            Time.timeScale = 1f;
+
         }
+
+        //linterna = null;
+      // Cono_de_la_linterna = null;
 
         _input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
