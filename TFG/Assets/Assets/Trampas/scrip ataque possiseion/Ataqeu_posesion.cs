@@ -15,11 +15,19 @@ public class Ataqeu_posesion : MonoBehaviour
     public GameObject objeto_poseido;
     public GameObject briyo;
 
-    // Start is called before the first frame update
-    void Start()
+    
+
+
+    public void Auto_destrucion() 
     {
-        
+
+        Destroy(objeto_poseido);
+
+
     }
+
+
+
 
     public void OnTriggerEnter2D(Collider2D other)
     {
@@ -28,8 +36,13 @@ public class Ataqeu_posesion : MonoBehaviour
 
             Entrasete_en_el_haria = true;
 
-
-            briyo.SetActive(true);
+            if (briyo != null)
+            { 
+            
+              briyo.SetActive(true);
+                Invoke("Auto_destrucion",5f);
+            }
+            
 
 
         }

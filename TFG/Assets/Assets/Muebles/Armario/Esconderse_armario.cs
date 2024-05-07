@@ -11,7 +11,7 @@ public class Esconderse_armario : MonoBehaviour
     public bool cerrado = false;
 
     public Contorlador_de_luces_del_monsturo Contorlador_de_luces_del_monsturo;
-
+    public Contorlador_de_luces_del_monsturo Contorlador_de_luces_del_monsturo2;
 
 
 
@@ -95,6 +95,15 @@ public class Esconderse_armario : MonoBehaviour
                                                     }
 
                                                 
+                                                    if (Contorlador_de_luces_del_monsturo2 != null) 
+                                                    { 
+                    
+                                                        Contorlador_de_luces_del_monsturo2.Oculto= true;
+                    
+                                                    }
+
+
+
 
                                                }
                                                else
@@ -112,6 +121,19 @@ public class Esconderse_armario : MonoBehaviour
                                                         Contorlador_de_luces_del_monsturo.Oculto= false;
                     
                                                     }
+
+                                                    if (Contorlador_de_luces_del_monsturo2 != null) 
+                                                    { 
+                    
+                                                        Contorlador_de_luces_del_monsturo2.Oculto= false;
+                    
+                                                    }
+
+
+
+
+
+
 
                                                 
 
