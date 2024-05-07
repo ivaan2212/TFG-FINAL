@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4577328151958507885
 Transform:
   m_ObjectHideFlags: 0
@@ -217,10 +217,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   velocidad_Enemigo: 5
-  Entrasete_en_el_haria: 0
-  Enemigo_ubicado: 0
-  cancelar: 0
   objeto_poseido: {fileID: 3194322214138401183}
+  briyo: {fileID: 490402129841112240}
 --- !u!58 &50555050764867600
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -255,4 +253,4 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 5.28
+  m_Radius: 5
