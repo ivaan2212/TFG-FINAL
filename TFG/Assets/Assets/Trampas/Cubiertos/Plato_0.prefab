@@ -184,7 +184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  velocidad_Enemigo: 5
+  velocidad_Enemigo: 6
   objeto_poseido: {fileID: 8521050453194740531}
   briyo: {fileID: 4067253975707157853}
 --- !u!58 &8382476582769547520
