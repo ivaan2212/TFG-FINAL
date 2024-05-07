@@ -71,10 +71,10 @@ public class Ataqeu_posesion : MonoBehaviour
 
             Enemigo_ubicado = true;
 
+        cancelar = true;
 
 
 
-        
 
 
     }
@@ -98,8 +98,8 @@ public class Ataqeu_posesion : MonoBehaviour
 
             if (cancelar == false) 
             {
-                cancelar = true;
-                Invoke("Retardo", 1f);
+                
+                Invoke("Retardo", 0.1f);
                 float anguloRadianes = Mathf.Atan2(player.position.y - transform.position.y, player.position.x - transform.position.x);
                 float anguloGrados = (180 / Mathf.PI) * anguloRadianes - 90;
                 transform.rotation = Quaternion.Euler(0, 0, anguloGrados);
