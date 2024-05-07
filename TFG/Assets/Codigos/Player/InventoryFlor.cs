@@ -2,16 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Inventory : MonoBehaviour
+public class InventoryFlor : MonoBehaviour
 {
     public bool[] isFull;
-    public GameObject[] slotsGema;
+    public GameObject[] slotsFlor;
     public GameObject Panel;
+    public PickUpFlor checkFlor;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
