@@ -5,9 +5,11 @@ public class Dialogue : MonoBehaviour
 {
 
     private bool isPlayerInRange;
+    public PickUpFlor flor; 
     public PersonajeMovimiento move;
     public GameObject habla;
     [SerializeField, TextArea(6,10)] private string[] LineasDialogo;
+    [SerializeField, TextArea(6, 10)] private string[] nuevoarreglodialogo;
     [SerializeField] private TMP_Text dialogue;
     [SerializeField] private GameObject dialoguePanel;
 
@@ -19,6 +21,7 @@ public class Dialogue : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
         if (isPlayerInRange && Input.GetKeyDown(KeyCode.E))
         {
             if (!didDialogueStart)
@@ -43,6 +46,13 @@ public class Dialogue : MonoBehaviour
         dialoguePanel.SetActive(true);
         habla.SetActive(false);
         lineIndex = 0;
+        Debug.Log(flor.Cflor);
+        if (flor.Cflor)
+        {
+            LineasDialogo = nuevoarreglodialogo;
+        }
+
+
         //Time.timeScale = 0f;
         //move.GetComponent<Animator>().enabled = false;
         move.GetComponent<PersonajeMovimiento>().enabled = false;
