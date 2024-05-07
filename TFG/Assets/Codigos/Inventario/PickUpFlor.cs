@@ -52,10 +52,6 @@ public class PickUpFlor : MonoBehaviour
                     {
                         Destroy(inventory.slotsFlor[i].transform.GetChild(0).gameObject);                        
                     }
-                    if (inventory.Panel.transform.childCount > 0)
-                    {
-                        Destroy(inventory.Panel.transform.GetChild(0).gameObject);
-                    }
 
                     // Marca el espacio de inventario como lleno
                     inventory.isFull[i] = false;
@@ -85,7 +81,12 @@ public class PickUpFlor : MonoBehaviour
                     if (newItemButton != null)
                     {
                         // Agrega un listener al evento OnClick del botón
-                        newItemButton.onClick.AddListener(() => {                            
+                        newItemButton.onClick.AddListener(() => {
+                            foreach (Transform child in inventory.Panel.transform)
+                            {
+                                child.gameObject.SetActive(false);
+                            }
+
                             textomostrar.SetActive(true);
                         });
                      }
