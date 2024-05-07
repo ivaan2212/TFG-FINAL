@@ -6,12 +6,15 @@ using UnityEngine.UI;
 public class PickUpFlor : MonoBehaviour
 {
     private InventoryFlor inventory;
+    private PickUp pick;
     public GameObject itemPrefab;
     public GameObject textoPrefab;
     private KeyCode teclaRecoger = KeyCode.E;
     private GameObject textoActual;
     public bool Cflor;
     public GameObject Ghosty;
+    //public GameObject GhostyOther;
+    public GameObject spawn;
 
     // Start is called before the first frame update
     private void Start()
@@ -19,7 +22,7 @@ public class PickUpFlor : MonoBehaviour
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<InventoryFlor>();
         itemPrefab.GetComponent<Button>().onClick.AddListener(RecogerObjeto);
         Ghosty = GameObject.FindGameObjectWithTag("Ghosty");
-        
+        //GhostyOther = GameObject.FindGameObjectWithTag("GhostyFlor");    
     }
 
     // Update is called once per frame
@@ -31,8 +34,6 @@ public class PickUpFlor : MonoBehaviour
             // Recoge el objeto si el jugador está cerca
             RecogerObjeto();
         }
-
-
     }
 
     private void RecogerObjeto()
@@ -47,9 +48,12 @@ public class PickUpFlor : MonoBehaviour
                 // Verifica si el espacio de inventario está vacío
                 if (!inventory.isFull[i])
                 {
-                    if (inventory.slotsFlor[i].transform.childCount > 0 && inventory.Panel.transform.childCount > 0)
+                    if (inventory.slotsFlor[i].transform.childCount > 0)
                     {
-                        Destroy(inventory.slotsFlor[i].transform.GetChild(0).gameObject);
+                        Destroy(inventory.slotsFlor[i].transform.GetChild(0).gameObject);                        
+                    }
+                    if (inventory.Panel.transform.childCount > 0)
+                    {
                         Destroy(inventory.Panel.transform.GetChild(0).gameObject);
                     }
 
@@ -65,13 +69,15 @@ public class PickUpFlor : MonoBehaviour
                     {
                         Cflor = true;
                         Debug.Log("Es una flor especial");
-                        Ghosty.SetActive(false);
+                        //Ghosty.SetActive(false);
+                        //Instantiate(GhostyOther, spawn.transform.position, Quaternion.identity, spawn.transform);
                     }
                     else
                     {
                         Cflor = false;
                         Debug.Log("Es una flor normal");
                         Ghosty.SetActive(true);
+                        //GhostyOther.SetActive(false);
                     }
 
                     // Obtén el componente Button del nuevo objeto
