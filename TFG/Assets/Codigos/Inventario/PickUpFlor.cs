@@ -32,7 +32,7 @@ public class PickUpFlor : MonoBehaviour
         if (Input.GetKeyDown(teclaRecoger))
         {
 
-            // Recoge el objeto si el jugador está cerca
+            // Recoge el objeto si el jugador estï¿½ cerca
             RecogerObjeto();
 
         }
@@ -42,15 +42,15 @@ public class PickUpFlor : MonoBehaviour
     private void RecogerObjeto()
     {
 
-        // Verifica si el jugador está cerca del objeto
+        // Verifica si el jugador estï¿½ cerca del objeto
         if (Vector2.Distance(transform.position, inventory.transform.position) < 1.5f)
         {
 
-            // Itera a través de los espacios de inventario
+            // Itera a travï¿½s de los espacios de inventario
             for (int i = 0; i < inventory.slotsFlor.Length; i++)
             {
 
-                // Verifica si el espacio de inventario está vacío
+                // Verifica si el espacio de inventario estï¿½ vacï¿½o
                 if (!inventory.isFull[i])
                 {
 
@@ -68,6 +68,8 @@ public class PickUpFlor : MonoBehaviour
                     GameObject newItem = Instantiate(itemPrefab, inventory.slotsFlor[i].transform.position, Quaternion.identity, inventory.slotsFlor[i].transform);
                     GameObject textomostrar = Instantiate(textoPrefab, inventory.Panel.transform.position, Quaternion.identity, inventory.Panel.transform);
                     textomostrar.SetActive(false);
+                    
+                    Cflor = false;
 
                     if (newItem.CompareTag("FlorAutentica"))
                     {
@@ -82,12 +84,12 @@ public class PickUpFlor : MonoBehaviour
 
                     }
 
-                    // Obtén el componente Button del nuevo objeto
+                    // Obtï¿½n el componente Button del nuevo objeto
                     Button newItemButton = newItem.GetComponent<Button>();
 
                     if (newItemButton != null)
                     {
-                        // Agrega un listener al evento OnClick del botón
+                        // Agrega un listener al evento OnClick del botï¿½n
                         newItemButton.onClick.AddListener(() => {
 
                             foreach (Transform child in inventory.Panel.transform)
