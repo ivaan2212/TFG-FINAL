@@ -16,20 +16,24 @@ public class ayudamario_Optimizado : MonoBehaviour
     public Renderer Pepe;
 
 
-
-
-
+    public bool A = false;
+    public bool B = false;
+    public bool C = false;
 
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+
+
         if (other.CompareTag("Controlador_de_Paredes"))
         {
 
             Pepe.sortingOrder = -1;
 
 
-
+            A = true;
+            B = false;
+            C = false;
         }
 
 
@@ -43,7 +47,9 @@ public class ayudamario_Optimizado : MonoBehaviour
             Pepe.sortingOrder = 12;
 
 
-
+            A = false;
+            B = true;
+            C = false;
 
 
         }
@@ -58,7 +64,9 @@ public class ayudamario_Optimizado : MonoBehaviour
 
             Pepe.sortingOrder = 10;
 
-
+            A = false;
+            B = false;
+            C = true;
 
 
 
