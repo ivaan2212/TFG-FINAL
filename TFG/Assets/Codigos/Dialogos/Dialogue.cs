@@ -5,6 +5,7 @@ public class Dialogue : MonoBehaviour
 {
 
     private bool isPlayerInRange;
+    private bool HGola;
     public PickUpFlor flor; 
     public PersonajeMovimiento move;
     public GameObject habla;
