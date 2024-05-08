@@ -5,12 +5,12 @@ public class Dialogue : MonoBehaviour
 {
 
     private bool isPlayerInRange;
-    private bool HGola;
     public PickUpFlor flor; 
     public PersonajeMovimiento move;
     public GameObject habla;
     [SerializeField, TextArea(6,10)] private string[] LineasDialogo;
     [SerializeField, TextArea(6, 10)] private string[] nuevoarreglodialogo;
+    [SerializeField, TextArea(6, 10)] private string[] LineasDialogo1;
     [SerializeField] private TMP_Text dialogue;
     [SerializeField] private GameObject dialoguePanel;
 
@@ -37,6 +37,8 @@ public class Dialogue : MonoBehaviour
                 StopAllCoroutines();
                 dialogue.text = LineasDialogo[lineIndex];
             }
+
+           if(flor.Cflor);
             
         }
     }
