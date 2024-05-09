@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6521701726422214005}
   m_Layer: 5
   m_Name: Flor2Button
-  m_TagString: FlorAutentica
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8c76af77726bb9a44a3fc8dc6a5dcccf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 261e9649f6f506c4ab54849b0cd5f181, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

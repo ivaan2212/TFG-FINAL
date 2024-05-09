@@ -563,15 +563,5 @@ public class Codigo_numerico : MonoBehaviour
 
         #endregion
 
-
-
-
-
-
-
-
-
-
-
     }
 }
