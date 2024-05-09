@@ -27,7 +27,11 @@ public class Dialogue : MonoBehaviour
         {
             if (!didDialogueStart)
             {
-                StartDialogue();
+                if (flor.Cflor)
+                {
+                    StartDialogue();
+                }
+                
             }else if(dialogue.text == LineasDialogo[lineIndex])
             {
                 NextDialogueLine();
@@ -36,10 +40,7 @@ public class Dialogue : MonoBehaviour
             {
                 StopAllCoroutines();
                 dialogue.text = LineasDialogo[lineIndex];
-            }
-
-           if(flor.Cflor);
-            
+            }            
         }
     }
 
@@ -50,6 +51,7 @@ public class Dialogue : MonoBehaviour
         habla.SetActive(false);
         lineIndex = 0;
         Debug.Log(flor.Cflor);
+
         if (flor.Cflor)
         {
             LineasDialogo = nuevoarreglodialogo;
