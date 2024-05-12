@@ -9,6 +9,7 @@ public class draggableitem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
     public Image image;
     [HideInInspector] public Transform ParentAfterDrag;
+    //public GameObject[] paneles;
 
     public void OnBeginDrag(PointerEventData eventData)
     {        
@@ -33,6 +34,8 @@ public class draggableitem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         Debug.Log("End drag");
         transform.SetParent(ParentAfterDrag);
         image.raycastTarget = true;
+
+
     }
 
 

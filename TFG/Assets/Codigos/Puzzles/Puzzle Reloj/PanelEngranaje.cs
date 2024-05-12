@@ -13,7 +13,6 @@ public class PanelEngranaje : MonoBehaviour, IDropHandler
             draggableitem draggableitem = dropped.GetComponent<draggableitem>();
             draggableitem.ParentAfterDrag = transform;
         }
-
     }
 
 }
