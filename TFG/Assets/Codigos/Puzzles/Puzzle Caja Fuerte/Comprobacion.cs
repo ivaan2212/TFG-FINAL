@@ -24,7 +24,7 @@ public class Comprobacion : MonoBehaviour
     public GameObject sprite2;
     public GameObject gema;
     public GameObject llave;
-    public InteraccionCajaFuerte caja;
+    public InteraccionCanvas caja;
 
 
     public void Comprobar()

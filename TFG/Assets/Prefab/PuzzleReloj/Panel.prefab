@@ -113,3 +113,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7eed98e1142dc484fa5217159eeeda45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  panelcorrecto: []
+  engranajes: {fileID: 0}
