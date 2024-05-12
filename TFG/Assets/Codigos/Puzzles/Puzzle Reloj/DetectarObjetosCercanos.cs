@@ -8,10 +8,12 @@ public class DetectarObjetosCercanos : MonoBehaviour
     public LayerMask layerMask; // Capas a considerar para la detección
 
     private Animator draggableAnimator;
+    private Collider2D myCollider;
 
     void Start()
     {
         draggableAnimator = GetComponent<Animator>();
+        myCollider = GetComponent<Collider2D>(); // Obtener el propio collider
     }
 
     void Update()
@@ -21,14 +23,18 @@ public class DetectarObjetosCercanos : MonoBehaviour
 
         // Verificar si alguno de los objetos cercanos tiene un animator activo
         bool activarAnimator = false;
-        Debug.Log(activarAnimator);
+
         foreach (Collider2D collider in colliders)
         {
-            Animator animator = collider.GetComponent<Animator>();
-            if (animator != null && animator.enabled)
+            // Excluir el propio collider del objeto
+            if (collider != myCollider)
             {
-                activarAnimator = true;
-                break;
+                Animator animator = collider.GetComponent<Animator>();
+                if (animator != null && animator.enabled)
+                {
+                    activarAnimator = true;
+                    break;
+                }
             }
         }
 
