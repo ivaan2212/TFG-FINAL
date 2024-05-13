@@ -13,10 +13,11 @@ public class DialogoMayor: MonoBehaviour
     [SerializeField] private GameObject dialoguePanel;
     public SpriteRenderer CambioSprite;
     public SpriteRenderer SpriteOriginal;
+    public DetectarObjetosFinal final;
 
     private float tiemporespuesta = 0.05f;
 
-    private bool didDialogueStart;
+    public bool didDialogueStart;
     private int lineIndex;
 
     private void Start()
@@ -52,7 +53,12 @@ public class DialogoMayor: MonoBehaviour
         dialoguePanel.SetActive(true);
         habla.SetActive(false);
         lineIndex = 0;
-        //LineasDialogo = nuevoarreglodialogo;     
+        
+        if (final.cambio == true)
+        {
+            LineasDialogo = nuevoarreglodialogo; 
+        }
+            
 
         move.GetComponent<PersonajeMovimiento>().enabled = false;
         StartCoroutine(ShowLine());
