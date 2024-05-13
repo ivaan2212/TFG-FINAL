@@ -6,8 +6,8 @@ public class DetectarObjetosFinal : MonoBehaviour
 {
     public float radius = 1f; // Radio para la detección de objetos cercanos
     public LayerMask layerMask; // Capas a considerar para la detección
-    public GameObject canvasactivar;
-    private float espera = 3f;
+    public bool cambio;
+    public InteraccionCanvas desactivador;
 
     private Animator draggableAnimator;
     private Collider2D myCollider;
@@ -35,6 +35,12 @@ public class DetectarObjetosFinal : MonoBehaviour
                 if (animator != null && animator.enabled)
                 {
                     activarAnimator = true;
+
+                    if (activarAnimator == true)
+                    {
+                        cambio = true;
+                        desactivador.enabled = false;
+                    }
                     break;
                 }
             }
