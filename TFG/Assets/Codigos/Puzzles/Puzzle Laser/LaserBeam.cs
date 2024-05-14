@@ -9,7 +9,6 @@ public class LaserBeam : MonoBehaviour
     GameObject laserObj;
     LineRenderer laser;
     List<Vector3> laserIndices = new List<Vector3>();
-    [SerializeField] Renderer renderer1;
 
 
     public LaserBeam(Vector3 pos, Vector3 dir, Material material)
@@ -27,8 +26,8 @@ public class LaserBeam : MonoBehaviour
         this.laser.startColor = Color.red;
         this.laser.endColor = Color.yellow;
 
-        renderer1 = this.laserObj.GetComponent<Renderer>();
-        renderer1.sortingOrder = 11;
+        Renderer renderer1 = this.laserObj.GetComponent<Renderer>();
+        renderer1.sortingOrder = -6;
 
         CastRay(pos, dir, laser);
     }
