@@ -22,6 +22,8 @@ TagManager:
   - Comienzo Engranaje
   - Rota
   - Mirror
+  - Obstaculo
+  - Solucion
   layers:
   - Default
   - TransparentFX
