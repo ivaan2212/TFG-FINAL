@@ -117,7 +117,7 @@ public class Ataqeu_posesion : MonoBehaviour
 
 
 
-            objeto_poseido.gameObject.transform.Translate(0, 0.04f, 0);
+            objeto_poseido.gameObject.transform.Translate(0, 1f* Time.fixedDeltaTime, 0) ;
 
 
 
