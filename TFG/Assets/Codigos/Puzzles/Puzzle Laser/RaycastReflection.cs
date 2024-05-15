@@ -5,7 +5,10 @@ using UnityEngine;
 [RequireComponent(typeof(LineRenderer))]
 public class RaycastReflection : MonoBehaviour
 {
-    public GameObject canvas;
+    public GameObject canvasactivar;
+    public GameObject canvascerrar;
+    public GameObject piedra1;
+    public GameObject piedra2;
 
     public int reflections;
     public float maxLenght;
@@ -23,16 +26,17 @@ public class RaycastReflection : MonoBehaviour
 
     private void Update()
     {
+        
         ray = new Ray(transform.position, transform.forward);
 
         lineRenderer.positionCount = 1;
         lineRenderer.SetPosition(0, transform.position);
         float remainingLength = maxLenght;
-
         for (int i = 0; i < reflections; i++)
         {
             if (Physics.Raycast(ray.origin, ray.direction, out hit, remainingLength))
             {
+                
                 lineRenderer.positionCount += 1;
                 lineRenderer.SetPosition(lineRenderer.positionCount - 1, hit.point);
                 remainingLength -= Vector3.Distance(ray.origin, hit.point);
@@ -47,6 +51,7 @@ public class RaycastReflection : MonoBehaviour
                 if(hit.collider.tag == "Solucion")
                 {
                     Debug.Log("Cambiando variable");
+                    Invoke("MostrarCanvas", 2f);
                     break;
                 }
                 
@@ -59,9 +64,21 @@ public class RaycastReflection : MonoBehaviour
         }
     }
 
-    public void Comprobacion()
+    public void MostrarCanvas()
     {
-        Debug.Log("Ha colisionado");
+        Time.timeScale = 0f;
+        canvasactivar.SetActive(true);
+        lineRenderer.enabled = false;
+        Invoke("CerrarCanvas", 4f);
+        
+    }
+
+    public void CerrarCanvas()
+    {
+        canvascerrar.SetActive(false);
+        Time.timeScale = 1f;
+        piedra1.SetActive(true);
+        piedra2.SetActive(true);
     }
 
 }
