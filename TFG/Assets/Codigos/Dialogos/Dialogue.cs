@@ -10,7 +10,6 @@ public class Dialogue : MonoBehaviour
     public GameObject habla;
     [SerializeField, TextArea(6,10)] private string[] LineasDialogo;
     [SerializeField, TextArea(6, 10)] private string[] nuevoarreglodialogo;
-    [SerializeField, TextArea(6, 10)] private string[] LineasDialogo1;
     [SerializeField] private TMP_Text dialogue;
     [SerializeField] private GameObject dialoguePanel;
 
@@ -27,12 +26,12 @@ public class Dialogue : MonoBehaviour
         {
             if (!didDialogueStart)
             {
-                if (flor.Cflor)
-                {
+
                     StartDialogue();
-                }
                 
-            }else if(dialogue.text == LineasDialogo[lineIndex])
+                
+            }
+            else if(dialogue.text == LineasDialogo[lineIndex])
             {
                 NextDialogueLine();
             }
@@ -87,7 +86,7 @@ public class Dialogue : MonoBehaviour
             didDialogueStart = false;
             dialoguePanel.SetActive(false);
             habla.SetActive(true);
-            //Time.timeScale = 1f;
+            Time.timeScale = 1f;
             //move.GetComponent<Animator>().enabled = true;
             move.GetComponent<PersonajeMovimiento>().enabled = true;
         }
