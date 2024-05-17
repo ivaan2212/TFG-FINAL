@@ -53,10 +53,10 @@ public class Empujar_Mejorrar : MonoBehaviour
                 if (Empujando_Derecha==true) 
                 { 
                 
-                    if (Input.GetKey(KeyCode.A))
+                    if (Input.GetKey(KeyCode.D))
                     {
                
-                    Caja.gameObject.transform.Translate( -0.01f, 0, 0 * Time.deltaTime);
+                    Caja.gameObject.transform.Translate( 0.01f, 0, 0 * Time.deltaTime);
 
 
 
@@ -79,10 +79,10 @@ public class Empujar_Mejorrar : MonoBehaviour
                 {
 
 
-                    if (Input.GetKey(KeyCode.D))
+                    if (Input.GetKey(KeyCode.A))
 
                     {
-                        Caja.gameObject.transform.Translate(0.01f, 0, 0 * Time.deltaTime);
+                        Caja.gameObject.transform.Translate(-0.01f, 0, 0 * Time.deltaTime);
                     }
 
 
@@ -94,11 +94,11 @@ public class Empujar_Mejorrar : MonoBehaviour
                 if (Empujando_Abajo == true)
                 {
 
-                    if (Input.GetKey(KeyCode.W))
+                    if (Input.GetKey(KeyCode.S))
                     {
 
 
-                        Caja.gameObject.transform.Translate(0, 0.01f, 0 * Time.deltaTime);
+                        Caja.gameObject.transform.Translate(0, -0.01f, 0 * Time.deltaTime);
 
 
 
@@ -112,11 +112,11 @@ public class Empujar_Mejorrar : MonoBehaviour
 
                 if (Empujando_Ariba == true)
                 {
-                    if (Input.GetKey(KeyCode.S))
+                    if (Input.GetKey(KeyCode.W))
                     {
 
 
-                        Caja.gameObject.transform.Translate(0, -0.01f, 0 * Time.deltaTime);
+                        Caja.gameObject.transform.Translate(0, 0.01f, 0 * Time.deltaTime);
 
                     }
                 }
