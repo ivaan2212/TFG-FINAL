@@ -17,6 +17,7 @@ public class RaycastReflection : MonoBehaviour
     private Ray ray;
     private RaycastHit hit;
     private Vector3 direction;
+    public SpriteRenderer xd;
 
 
     private void Awake()
