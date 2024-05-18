@@ -24,6 +24,9 @@ TagManager:
   - Mirror
   - Obstaculo
   - Solucion
+  - Activate
+  - Desactive
+  - Desactivate
   layers:
   - Default
   - TransparentFX
@@ -31,7 +34,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - capaHielo
   - 
   - 
   - 

@@ -11,6 +11,12 @@ public class PersonajeMovimiento : MonoBehaviour
     private bool inventoryEnabled;
     public GameObject inventory;
 
+    public float slidingSpeed = 10f;
+    public LayerMask slideTileLayer; // Capa que contiene los Tiles deslizantes
+
+    private Rigidbody2D rb;
+    private Vector2 lastDirection;
+
     [SerializeField] public float velocidad;
     public bool EnMovimiento => _direccionMovimiento.magnitude > 0f;
 
@@ -53,7 +59,7 @@ public class PersonajeMovimiento : MonoBehaviour
     {
         //inventario_com = GameObject.FindGameObjectWithTag("inventario-com");
         //inventario_com.SetActive(false);
-        
+        rb = GetComponent<Rigidbody2D>();
 
     }
 
@@ -66,7 +72,7 @@ public class PersonajeMovimiento : MonoBehaviour
 
     private void FixedUpdate()
     {
-        _rigidbody2D.MovePosition(_rigidbody2D.position + _direccionMovimiento * velocidad * Time.fixedDeltaTime);
+        _rigidbody2D.MovePosition(_rigidbody2D.position + _direccionMovimiento * velocidad * Time.deltaTime);
     }
 
     void Update()
