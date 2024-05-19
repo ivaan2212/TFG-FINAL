@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: Ice
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: -1513387049, guid: 41f17a60f485fa54699b21475e667e63, type: 3}
+  - {fileID: -1357559859, guid: 41f17a60f485fa54699b21475e667e63, type: 3}
+  - {fileID: 3239197, guid: 41f17a60f485fa54699b21475e667e63, type: 3}
+  - {fileID: -1589015683, guid: 41f17a60f485fa54699b21475e667e63, type: 3}
+  - {fileID: -983399121, guid: 41f17a60f485fa54699b21475e667e63, type: 3}
+  - {fileID: -1977250460, guid: 41f17a60f485fa54699b21475e667e63, type: 3}
+  - {fileID: 2141215266, guid: 41f17a60f485fa54699b21475e667e63, type: 3}
+  - {fileID: -2099430248, guid: 41f17a60f485fa54699b21475e667e63, type: 3}
+  - {fileID: -1984988199, guid: 41f17a60f485fa54699b21475e667e63, type: 3}
+  - {fileID: -1518076891, guid: 41f17a60f485fa54699b21475e667e63, type: 3}
+  - {fileID: 1471259568, guid: 41f17a60f485fa54699b21475e667e63, type: 3}
+  m_MinSpeed: 5
+  m_MaxSpeed: 12
+  m_AnimationStartTime: 140
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 1
+  m_TileAnimationFlags: 0

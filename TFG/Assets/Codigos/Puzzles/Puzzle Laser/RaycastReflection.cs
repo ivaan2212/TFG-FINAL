@@ -17,7 +17,10 @@ public class RaycastReflection : MonoBehaviour
     private Ray ray;
     private RaycastHit hit;
     private Vector3 direction;
-    public SpriteRenderer xd;
+    public GameObject cajafuerteluzroja;
+    public GameObject cajafuerteluzverde;
+    public bool canopen;
+
 
 
     private void Awake()
@@ -70,8 +73,7 @@ public class RaycastReflection : MonoBehaviour
         Time.timeScale = 0f;
         canvasactivar.SetActive(true);
         lineRenderer.enabled = false;
-        Invoke("CerrarCanvas", 4f);
-        
+        Invoke("CerrarCanvas", 4f);        
     }
 
     public void CerrarCanvas()
@@ -80,6 +82,9 @@ public class RaycastReflection : MonoBehaviour
         Time.timeScale = 1f;
         piedra1.SetActive(true);
         piedra2.SetActive(true);
+        cajafuerteluzverde.SetActive(true);
+        cajafuerteluzroja.SetActive(false);
+        canopen = true;
     }
 
 }
