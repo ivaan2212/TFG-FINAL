@@ -27,6 +27,7 @@ TagManager:
   - Activate
   - Desactive
   - Desactivate
+  - "Da\xF1o"
   layers:
   - Default
   - TransparentFX
