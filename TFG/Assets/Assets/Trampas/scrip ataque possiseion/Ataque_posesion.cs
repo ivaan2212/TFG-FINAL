@@ -28,7 +28,7 @@ public class Ataque_posesion : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Daño"))
         {
             circulo.enabled = false;
             areadentro= true;
@@ -45,7 +45,7 @@ public class Ataque_posesion : MonoBehaviour
 
     public void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Daño"))
         {
             areadentro = true;
         }
