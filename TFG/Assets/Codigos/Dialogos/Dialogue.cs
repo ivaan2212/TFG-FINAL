@@ -12,6 +12,7 @@ public class Dialogue : MonoBehaviour
     [SerializeField, TextArea(6, 10)] private string[] nuevoarreglodialogo;
     [SerializeField] private TMP_Text dialogue;
     [SerializeField] private GameObject dialoguePanel;
+    public GameObject gema;
 
     private float tiemporespuesta = 0.05f;
 
@@ -54,6 +55,7 @@ public class Dialogue : MonoBehaviour
         if (flor.Cflor)
         {
             LineasDialogo = nuevoarreglodialogo;
+            gema.SetActive(true);
         }
 
 

@@ -95,6 +95,8 @@ GameObject:
   - component: {fileID: 2180986000349498547}
   - component: {fileID: 1085387781262122026}
   - component: {fileID: 2582874917982417550}
+  - component: {fileID: 6254783222052684226}
+  - component: {fileID: 6420563329884123137}
   m_Layer: 0
   m_Name: tenedor_Poseido tenedor_TENEDOR
   m_TagString: Untagged
@@ -199,6 +201,40 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &6254783222052684226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503924592140882491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecbe6352797c448448db96f451826fee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  move: {fileID: 0}
+  objeto_poseido: {fileID: 503924592140882491}
+  briyo: {fileID: 4641790639680400957}
+  circulo: {fileID: 1085387781262122026}
+--- !u!114 &6420563329884123137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503924592140882491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc0b2eba34a0a1c4a9940f27dd43f79f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jugador: {fileID: 0}
+  move: {fileID: 0}
+  nuevoColor: {r: 0.6603774, g: 0, b: 0, a: 1}
+  colliderobjeto: {fileID: 2582874917982417550}
+  colliderJugadorEspecifico: {fileID: 0}
 --- !u!1 &1462134345263322923
 GameObject:
   m_ObjectHideFlags: 0
