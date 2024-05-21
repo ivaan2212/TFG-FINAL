@@ -54,7 +54,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _FogSize: 6
+    - _FogSize: 0
     - _WorldSpace: 1
     m_Colors:
     - _FogColor: {r: 1, g: 1, b: 1, a: 0.16862746}
