@@ -13,6 +13,7 @@ public class Esconderse_armario : MonoBehaviour
     public Contorlador_de_luces_del_monsturo Contorlador_de_luces_del_monsturo;
     public Contorlador_de_luces_del_monsturo Contorlador_de_luces_del_monsturo2;
 
+    public PersonajeMovimiento PersonajeMovimiento;
 
 
     public void Cierre() 
@@ -35,8 +36,8 @@ public class Esconderse_armario : MonoBehaviour
             
             Estas_dentro=true;
 
-            
 
+            //PersonajeMovimient.Encendido = false;
 
 
         }
@@ -53,7 +54,7 @@ public class Esconderse_armario : MonoBehaviour
 
              Estas_dentro=false;
 
-
+            //PersonajeMovimient.Encendido = true;
 
         }
     }
