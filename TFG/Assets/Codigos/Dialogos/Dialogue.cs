@@ -19,6 +19,20 @@ public class Dialogue : MonoBehaviour
     private bool didDialogueStart;
     private int lineIndex;
 
+    private Animator animator;
+   // public Sprite normalSprite;
+    //public Sprite spritecerca;
+   // public SpriteRenderer spriteRenderer;
+
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+        //spriteRenderer.sprite = normalSprite;
+        
+    }
+
+
     // Update is called once per frame
     void Update()
     {
@@ -99,8 +113,11 @@ public class Dialogue : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            animator.SetBool("Mirando", true);
             isPlayerInRange = true;
             habla.SetActive(true);
+            //spriteRenderer.sprite = spritecerca;
+            
         }
         
     }
@@ -109,8 +126,11 @@ public class Dialogue : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            animator.SetBool("Mirando", false);
             isPlayerInRange = false;
             habla.SetActive(false);
+            
+            //spriteRenderer.sprite = normalSprite;
         }
     }
 }
