@@ -9,31 +9,76 @@ public class ComprobarAbrirCajaFuerte : MonoBehaviour
     public GameObject cajaabierta;
     public GameObject cajacerrada;
     public GameObject gema;
+    public bool Si = false;
 
-    public void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D other)
     {
-        if(collision.gameObject.CompareTag("Player"))
+        if(other.gameObject.CompareTag("Player"))
         {
             interaccion.SetActive(true);
-
+            
             if (comp.canopen)
             {
-                cajacerrada.SetActive(false);
-                cajaabierta.SetActive(true);
-                gema.SetActive(true);
+
+                Si = true;
+                
             }
         }
     }
 
 
-    public void OnTriggerExit2D(Collider2D collision)
+    public void OnTriggerExit2D(Collider2D other)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
             interaccion.SetActive(false);
+            Si = false;
+
         }
     }
 
 
 
-}
+
+    void Update()
+    {
+        if (Si==true) 
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+
+                cajacerrada.SetActive(false);
+                cajaabierta.SetActive(true);
+                gema.SetActive(true);
+
+            }
+        
+        }
+    
+                   
+    
+    
+    }  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
