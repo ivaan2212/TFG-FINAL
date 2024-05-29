@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
+/*using UnityEditor;
 
 [InitializeOnLoad]
 public class HierachyGroupHeaderEditor : Editor
@@ -39,3 +39,4 @@ public class HierachyGroupHeaderEditor : Editor
         EditorApplication.RepaintHierarchyWindow();
     }
 }
+*/
