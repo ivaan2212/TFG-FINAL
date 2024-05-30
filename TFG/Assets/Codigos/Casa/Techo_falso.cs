@@ -8,7 +8,10 @@ public class Techo_falso : MonoBehaviour
 
     public GameObject Techo;
 
-
+    void Start()
+    {
+        Techo.SetActive(true);
+    }
 
 
 
