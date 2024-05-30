@@ -120,7 +120,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1.4371643}
+  m_Offset: {x: 0, y: -1.3729496}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -131,7 +131,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.75, y: 0.12145996}
+  m_Size: {x: 2.75, y: 0.24988937}
   m_EdgeRadius: 0
 --- !u!61 &743988118031257278
 BoxCollider2D:
@@ -301,6 +301,8 @@ MonoBehaviour:
   Estas_dentro: 0
   cerrado: 1
   Contorlador_de_luces_del_monsturo: {fileID: 0}
+  Contorlador_de_luces_del_monsturo2: {fileID: 0}
+  PersonajeMovimiento: {fileID: 0}
 --- !u!61 &1376016371035318682
 BoxCollider2D:
   m_ObjectHideFlags: 0
