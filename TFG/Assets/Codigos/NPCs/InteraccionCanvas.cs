@@ -8,13 +8,14 @@ public class InteraccionCanvas : MonoBehaviour
     public GameObject activador;
     private bool activacion;
     public GameObject canvasActivar;
+    public GameObject pausapanel;
 
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player")){
             activador.SetActive(true);
-            activacion = true;
+            activacion = true;            
         }
     }
 
@@ -23,23 +24,23 @@ public class InteraccionCanvas : MonoBehaviour
         if (collision.gameObject.CompareTag("Player")){
             activador.SetActive(false);
             activacion = false;
+            pausapanel.SetActive(true);
         }
     }
 
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
+        
+
         if(activacion && Input.GetKeyDown(KeyCode.E))
         {
+            pausapanel.SetActive(false);
             canvasActivar.SetActive(true);
+
         }
+        
     }
+
 }

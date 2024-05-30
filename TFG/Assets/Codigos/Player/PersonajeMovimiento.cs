@@ -49,6 +49,7 @@ public class PersonajeMovimiento : MonoBehaviour
     public GameObject Cono_Derecha;
     public GameObject Cono_Izquierda;
     public int Grado = 0;
+    public GameObject panelpausa;
 
     //private readonly int direccionY = Animator.StringToHash("Y");
     //private readonly int direccionX = Animator.StringToHash("X");
@@ -82,7 +83,7 @@ public class PersonajeMovimiento : MonoBehaviour
         //    _direccionMovimiento = Vector2.zero;
         //    return;
         //}  
-
+        
         if (Input.GetKeyDown(KeyCode.I))
         {
             inventoryEnabled = !inventoryEnabled;
@@ -92,12 +93,14 @@ public class PersonajeMovimiento : MonoBehaviour
         {
             inventory.SetActive(true);
             Time.timeScale = 0f;
+            //panelpausa.SetActive(false);
 
         }
         else
         {
             inventory.SetActive(false);
             Time.timeScale = 1f;
+            //panelpausa.SetActive(true);
 
         }
 
