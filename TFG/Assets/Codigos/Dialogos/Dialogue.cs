@@ -13,6 +13,7 @@ public class Dialogue : MonoBehaviour
     [SerializeField] private TMP_Text dialogue;
     [SerializeField] private GameObject dialoguePanel;
     public GameObject gema;
+    private SoundManager soundmanager;
 
     private float tiemporespuesta = 0.05f;
 
@@ -20,10 +21,14 @@ public class Dialogue : MonoBehaviour
     private int lineIndex;
 
     private Animator animator;
-   // public Sprite normalSprite;
+    // public Sprite normalSprite;
     //public Sprite spritecerca;
-   // public SpriteRenderer spriteRenderer;
+    // public SpriteRenderer spriteRenderer;
 
+    private void Awake()
+    {
+        soundmanager = FindObjectOfType<SoundManager>();
+    }
 
     private void Start()
     {
@@ -65,7 +70,7 @@ public class Dialogue : MonoBehaviour
         habla.SetActive(false);
         lineIndex = 0;
         Debug.Log(flor.Cflor);
-
+        soundmanager.SeleccionAudio(0, 1f);
         if (flor.Cflor)
         {
             LineasDialogo = nuevoarreglodialogo;
@@ -81,6 +86,7 @@ public class Dialogue : MonoBehaviour
 
     private IEnumerator ShowLine()
     {
+        soundmanager.SeleccionAudio(0, 0.5f);
         dialogue.text = string.Empty;
 
         foreach (char ch in LineasDialogo[lineIndex])
@@ -96,6 +102,7 @@ public class Dialogue : MonoBehaviour
         if(lineIndex < LineasDialogo.Length)
         {
             StartCoroutine(ShowLine());
+            soundmanager.SeleccionAudio(0, 1f);
         }
         else
         {

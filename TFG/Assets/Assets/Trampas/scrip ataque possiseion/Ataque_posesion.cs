@@ -17,8 +17,12 @@ public class Ataque_posesion : MonoBehaviour
     public GameObject briyo;
 
     public CircleCollider2D circulo;
+    private SoundManager soundmanager;
 
-
+    private void Awake()
+    {
+        soundmanager = FindObjectOfType<SoundManager>();
+    }
 
     public void Auto_destruccion() 
     {

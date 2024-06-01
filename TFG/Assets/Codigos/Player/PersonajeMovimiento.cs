@@ -50,6 +50,7 @@ public class PersonajeMovimiento : MonoBehaviour
     public GameObject Cono_Izquierda;
     public int Grado = 0;
     public GameObject panelpausa;
+    private SoundManager soundManager;
 
     //private readonly int direccionY = Animator.StringToHash("Y");
     //private readonly int direccionX = Animator.StringToHash("X");
@@ -69,6 +70,7 @@ public class PersonajeMovimiento : MonoBehaviour
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         //_personajeVida = GetComponent<PersonajeVida>();
+        soundManager = FindObjectOfType<SoundManager>();
     }
 
     private void FixedUpdate()
