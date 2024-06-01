@@ -10,6 +10,12 @@ public class PickUp : MonoBehaviour
     public GameObject textoPrefab;
     private KeyCode teclaRecoger = KeyCode.E;
     private GameObject textoActual;
+    private SoundManager soundmanager;
+
+    private void Awake()
+    {
+        soundmanager = FindObjectOfType<SoundManager>();
+    }
 
     // Start is called before the first frame update
     private void Start()
@@ -35,6 +41,7 @@ public class PickUp : MonoBehaviour
         // Verifica si el jugador está cerca del objeto
         if (Vector2.Distance(transform.position, inventory.transform.position) < 1.5f)
         {
+            soundmanager.SeleccionAudio(2, 0.5f);
             // Itera a través de los espacios de inventario
             for (int i = 0; i < inventory.slotsGema.Length; i++)
             {
@@ -67,9 +74,9 @@ public class PickUp : MonoBehaviour
                         });
                      }
 
-                    
-                    
 
+
+                    
                     // Destruye el objeto recolectable del mundo
                     Destroy(gameObject);
 

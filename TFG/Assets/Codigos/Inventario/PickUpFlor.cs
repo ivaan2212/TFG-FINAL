@@ -13,6 +13,13 @@ public class PickUpFlor : MonoBehaviour
     private GameObject textoActual;
     public bool Cflor;
     public GameObject Ghosty;
+
+    private SoundManager soundmanager;
+
+    private void Awake()
+    {
+        soundmanager = FindObjectOfType<SoundManager>();
+    }
     //public GameObject GhostyOther;
 
     // Start is called before the first frame update
@@ -41,11 +48,12 @@ public class PickUpFlor : MonoBehaviour
 
     private void RecogerObjeto()
     {
+        
 
         // Verifica si el jugador est� cerca del objeto
         if (Vector2.Distance(transform.position, inventory.transform.position) < 1.5f)
         {
-
+            soundmanager.SeleccionAudio(3, 0.5f);
             // Itera a trav�s de los espacios de inventario
             for (int i = 0; i < inventory.slotsFlor.Length; i++)
             {

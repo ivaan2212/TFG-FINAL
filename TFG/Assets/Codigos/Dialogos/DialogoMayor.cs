@@ -14,6 +14,8 @@ public class DialogoMayor: MonoBehaviour
     public SpriteRenderer CambioSprite;
     public SpriteRenderer SpriteOriginal;
     public DetectarObjetosFinal final;
+    private SoundManager soundmanager;
+
 
     private float tiemporespuesta = 0.05f;
 
@@ -24,6 +26,10 @@ public class DialogoMayor: MonoBehaviour
     {
     }
 
+    private void Awake()
+    {
+        soundmanager = FindObjectOfType<SoundManager>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -53,7 +59,7 @@ public class DialogoMayor: MonoBehaviour
         dialoguePanel.SetActive(true);
         habla.SetActive(false);
         lineIndex = 0;
-        
+        soundmanager.SeleccionAudio(0, 1f);
         if (final.cambio == true)
         {
             LineasDialogo = nuevoarreglodialogo; 
@@ -66,6 +72,7 @@ public class DialogoMayor: MonoBehaviour
 
     private IEnumerator ShowLine()
     {
+        soundmanager.SeleccionAudio(0, 1f);
         dialogue.text = string.Empty;
 
         foreach (char ch in LineasDialogo[lineIndex])
